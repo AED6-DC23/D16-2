@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;              /*жирность шрифта*/
+                                   /*цвет фона сайта*/
+}
+
+a {
+    text-decoration: none;
+             /*убирает подчеркивание ссылки*/
+}
+
+img {
+    max-width: 40%;                 /*фото во всю ширину чтобы фото не вылазило за предели род. окна*/
+    display: block;
+}
+
+.wraper {
+    background: linear-gradient(180deg, rgba(8,9,121,1) 8%, rgba(0,255,136,1) 100%);
+    width: 100%;
+    
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;              /*отступы 1- слева на право, 2- сверху вниз*/
+}
+
+.container .logo {
+    text-transform: uppercase;
+    font-size: 29px;              /*размер шрифта*/
+    font-weight: 800;
+    color: #fff;             /*жирность шрифта*/
+}
+
+header nav {
+    float: right;                  /*содержимое навигации перемещается вправо*/
+    width: 55%;
+    padding-top: 10px;
+}
+
+header nav ul {
+    list-style: none;              /*убирает стандартное обозначение ссылок (то есть точки перед ссылкой)*/
+    display: flex;                 /*Располагает содержимое по горизонтали в плотную друг к другу*/
+    justify-content: space-between;
+}
+
+.btn1 {
+    padding: 0 0px 0 150px;
+}
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li:not(.btn1):not(.btn2):not(a.logo) a:hover {
+    border-bottom: 3px solid rgb(224, 15, 15);                      /*обводка снизу при наведении на ссылку*/
+}
+
+header nav ul li.btn1 a {
+    background: red;
+    padding: 8px 10px;
+    border-radius: 15px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn2 a {
+    background: green;
+    padding: 8px 10px;
+    border-radius: 15px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn1 a:hover {
+    background: rgb(199, 63, 63);
+}
+
+header nav ul li.btn2 a:hover {
+    background: rgb(74, 143, 74);
+}
+
+h1 {
+    padding-left:337px;
+}
+
+.hero-info {
+    display: flex;
+}
+

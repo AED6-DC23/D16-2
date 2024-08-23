@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}{% endblock %} </title>
+    {% load static %}      
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+<body>
+    <div class="wraper">
+        <header class="container">
+            <a href="main"><span class="logo">Survival Hero</span></a>
+            <nav>
+                <ul>
+                    <li><a href="/news">Новости</a></li>
+                    <li><a href="/about-us">О нас</a></li>
+                    <li><a href="/contacts">Контакты</a></li>    
+                    <li class="navigation"><a href="/mynews">Мои новости</a></li>                                        
+                    <li class="btn1"><a href="{% 'account:login' %}">Sign-Up</a></li>
+                    <li class="btn2"><a href="#">Sign-In</a></li>                                      
+                </ul>
+            </nav>
+        </header>               
+        <div class="hero-info">
+            <img src="{% static 'Photo/MMORGP1 rem.jpg' %}" alt="">  
+            <div class="info" style="color: aliceblue;">                
+                {% block body %}
+                {% endblock %}
+            </div>                       
+        </div>       
+    </div>        
+</body>
+</html>
+
+
+
